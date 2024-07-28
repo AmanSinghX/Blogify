@@ -35,12 +35,19 @@ function Home() {
                                     Login to Read Posts
                                 </Button>
                             </Link>
+                            <div className="text-gray-600">Or</div>
+                            <Link to="/signup">
+                                <Button className="w-full bg-green-500 text-white py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition-all mt-4">
+                                    Create a New Account and Join Blogify
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </Container>
             </div>
         );
     }
+
 
     if (posts.length === 0) {
         return (
